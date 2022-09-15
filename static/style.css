@@ -1,0 +1,12 @@
+.messagesarea {
+    width: 100%;
+    height: 80vh;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid #000;
+    justify-content: space-around;
+}

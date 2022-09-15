@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<textarea disabled name="messagesarea" class="messagesarea" cols="30" rows="10"
+          maxlength="999999999999999999999999999999999999999999999999999999999999999999999">{{ messages }}</textarea>
+<div class="form-container">
+    <form action="/{{ username }}" method="post" style="width: 66%; height: 90%">
+        <input type="text" name="message" id="message" style="width: 49%; height: 90%">
+        <input type="submit" value="Отправить" style="width: 49%; height: 90%">
+    </form>
+    <form action="/exit" method="post" style="width: 33%; height: 90%">
+        <input type="submit" value="Выйти" style="width: 100%; height: 90%">
+    </form>
+</div>
+</body>
+</html>
